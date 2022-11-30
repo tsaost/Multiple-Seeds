@@ -1,6 +1,8 @@
 ## What does this do?
 This Automatic1111 script allows you to enter multiple seeds to generate a set of images, instead of being limited to using just 1 seed at a time. That's it.
 
+![Screenshot](https://i.imgur.com/GhYlpgH.jpg)
+
 ## Workflow
 I like to generate a whole bunch of images using a prompt with a random seed to find seeds that work well for the images I am trying to create. I then save the seed for an image by clicking the green recycle button to put that seed in the Seed textbox. Cut it and paste it into the Seeds textbox created when running this script. Repeat until you have a bunch of good seeds.
 
