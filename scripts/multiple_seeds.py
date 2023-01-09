@@ -46,7 +46,11 @@ class Script(scripts.Script):
         seeds = list(filter(None, seeds)) # filter out any bad data created by multiple seperators in the textbox
 
         if len(seeds) == 2 and seeds[0] < seeds[1]:
-            seeds = list(range(seeds[0], seeds[1]))
+            seed0 = int(seeds[0])
+            seed1 = int(seeds[1])
+            seeds = []
+            for seed in range(seed0, seed1):
+                seeds.append(str(seed))
 
         if p.enable_hr:
             print(f"Will create {len(seeds)} images ({len(seeds)*2} jobs with Highres fix) with seeds: {seed_textbox}")
